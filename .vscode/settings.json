@@ -1,0 +1,4 @@
+{
+    "debug.javascript.breakOnConditionalError": false,
+    "debug.javascript.unmapMissingSources": false
+}

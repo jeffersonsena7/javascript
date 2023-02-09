@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(68, 68, 231);
+}
+header{
+    color: white;
+    text-align: center;
+}
+
+section{
+    background-color:white;
+    border: 15px;
+    width: 500px;
+    border-radius: 15px;
+    box-shadow: 15px;
+    margin: auto;
+    padding: 21px;
+    font: normal 15pt Arial;
+    font-style: italic;
+}
+footer{
+    text-align: center;
+    color: white;
+    font: bold 12pt arial;
+}
+select{
+    width: 150px; /* para deixar o select com a largura maior da barra de rolagem e embranco */
+}

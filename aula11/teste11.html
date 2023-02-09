@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasileiro</title>
+</head>
+<body>
+    <h1>Sistema de Brasileiro ou Estrageiro</h1>
+    Qual o seu pais: <input type="text" name="text01" id="text01">
+    <input type="button" value="ok" onclick="ok()">
+    <div id="res"></div>
+
+    <script>
+        function ok(){
+            var pais = window.document.querySelector('input#text01')
+            var res = window.document.querySelector('div#res')
+            res.innerHTML = `Seu pais de origem é ${pais}` 
+            if(pais != 'brasil'){
+                res.innerHTML += `<p>você não é brasileiro</p>`
+            }
+            else{
+
+                res.innerHTML += `<p>você é brasileiro</p>`
+            }
+
+        }
+    </script>
+</body>
+</html>

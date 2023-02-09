@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(14, 1, 1);
+    font: normal 15pt Arial;
+}
+
+header{
+    color: white;
+    text-align: center;
+
+}
+
+section{
+    background: white; 
+    border-radius: 10px;  /* deixar o quadrado redondinho nas pontas*/
+    padding: 15px;  /*tamanho do quadrado*/
+    width: 500px;     /*diminuir o tamanho da imagem para visualizaçaõ, porem o tamanho em bits continua do mesmo tamanho*/
+    margin: auto; /*Margen do quadrado*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.438); /*tamanho da sombra*/
+}
+
+footer{
+    color: white;
+    text-align: center; /*centralizar texto*/
+    font-style: italic;
+}
+div{
+    text-align: center;
+    color: rgb(40, 151, 202);
+    }

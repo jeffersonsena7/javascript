@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background: rgb(110, 110, 228);
+            color: white;
+            font: normal 18pt Arial;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM.</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprenda a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>   <!--div pode usar 'id' 'name' ou 'class'-->
+    <script>
+        var corpo = window.document.body       
+        var p1 = window.document.getElementsByTagName('p')[1]  // seleciona por marca e pega o resultado do paragrafo 'p'
+        
+        /*var d = window.document.getElementById('msg')  // selecionar por id, criar um id = msg em div, criar uma variavel d = msg, ao pedir pra ler deixa com sombra da cor escolhida           
+        d.style.background = 'green'  // colocar a cor na variavel 'd'
+        d.innerText = 'Estou aguardando...' // para mudar de clique em mim, para estou aguardando
+        */
+        var d =window.document.querySelector('div#msg') // selecionar por seletor,'div#msg' quando usa id, quando usar class fica 'div.msg' 
+        d.style.background = 'blue'
+        var corpo = window.document.body
+        corpo.style.background = 'black'
+
+        window.document.write(p1.innerHTML)
+    </script>
+</body>
+</html>

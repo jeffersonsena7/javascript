@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DetranPB</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            font: normal 12pt Arial;
+        }
+        h1{
+            background-color: white;
+            color: red;
+        }
+   
+    </style>
+</head>
+<body>
+    <h1>Sistema de Multa 2022</h1>
+    A velocidade do carro foi <input type="number" name="vel" id="vel">     km/h
+    <input type="button" value="calcular" onclick="calcular()">
+    <div id="res"></div>
+
+    <script>
+        function calcular(){
+            var v = window.document.getElementById('vel')
+            var res = window.document.getElementById('res')
+            var velocidade = Number(v.value)
+            res.innerHTML = `<p>a sua velocidade é <strong>${velocidade} km/h</strong></p>`
+            if(velocidade > 60){
+                res.innerHTML += `<p> voce está <strong>MULTADO</strong> por excesso de velocidade</p>`
+            }
+            res.innerHTML +=`<p>Dirija sempre com cinto de segurança</p>`
+        }
+    </script>
+</body>
+</html>
